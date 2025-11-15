@@ -4,12 +4,12 @@ package web_banking_grupo6;
  * Gestor de autenticación del sistema.
  * Valida credenciales de clientes y controla el acceso al sistema.
  */
-public class LoginManager {
+public class GestorLogin {
     
     private ClienteRepository repositorio;
     private Cliente clienteActual;
     
-    public LoginManager() {
+    public GestorLogin() {
         this.repositorio = new ClienteRepository();
         this.clienteActual = null;
     }

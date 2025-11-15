@@ -3,8 +3,8 @@ package web_banking_grupo6.ui.login;
 import web_banking_grupo6.ui.components.Button;
 import web_banking_grupo6.ui.components.MyPasswordField;
 import web_banking_grupo6.ui.components.MyTextField;
-import web_banking_grupo6.LoginManager;
-import web_banking_grupo6.LoginManager.ResultadoLogin;
+import web_banking_grupo6.GestorLogin;
+import web_banking_grupo6.GestorLogin.ResultadoLogin;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
@@ -16,13 +16,13 @@ import net.miginfocom.swing.MigLayout;
 
 public class PanelLoginAndRegister extends javax.swing.JLayeredPane {
 
-    private LoginManager loginManager;
+    private GestorLogin loginManager;
     private MyTextField txtDocumentoLogin;
     private MyPasswordField txtPasswordLogin;
     
     public PanelLoginAndRegister() {
         initComponents();
-        loginManager = new LoginManager();
+        loginManager = new GestorLogin();
         initRegister();
         initLogin();
         login.setVisible(false);
