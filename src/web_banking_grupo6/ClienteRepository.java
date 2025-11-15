@@ -8,7 +8,6 @@ import java.util.Map;
 /**
  * Repositorio de clientes del sistema.
  * Inicializa clientes de prueba para probar la funcionalidad del login.
- * En una implementación real, esto se conectaría a una base de datos.
  */
 public class ClienteRepository {
     
@@ -23,10 +22,10 @@ public class ClienteRepository {
      * Inicializa clientes de prueba con cuentas y saldos.
      */
     private void inicializarClientesDePrueba() {
-        // Cliente 1: Juan Pérez
+        // Cliente 1: Juan Perez
         Cliente cliente1 = new Cliente(
             "12345678",
-            "Juan Pérez García",
+            "Juan Perez Garcia",
             "juan123",
             "987654321",
             "juan.perez@email.com"
@@ -38,7 +37,7 @@ public class ClienteRepository {
         // Cliente 2: María López
         Cliente cliente2 = new Cliente(
             "87654321",
-            "María López Rodríguez",
+            "Maria Lopez Rodriguez",
             "maria456",
             "912345678",
             "maria.lopez@email.com"
@@ -50,7 +49,7 @@ public class ClienteRepository {
         // Cliente 3: Carlos Ramírez
         Cliente cliente3 = new Cliente(
             "45678912",
-            "Carlos Ramírez Torres",
+            "Carlos Ramirez Torres",
             "carlos789",
             "956789123",
             "carlos.ramirez@email.com"
@@ -59,10 +58,10 @@ public class ClienteRepository {
         cliente3.setCuenta(cuenta3);
         clientes.put(cliente3.getDocumento(), cliente3);
         
-        // Cliente 4: Ana Martínez
+        // Cliente 4: Ana Martinez
         Cliente cliente4 = new Cliente(
             "78912345",
-            "Ana Martínez Silva",
+            "Ana Martinez Silva",
             "ana2024",
             "923456789",
             "ana.martinez@email.com"
@@ -71,10 +70,10 @@ public class ClienteRepository {
         cliente4.setCuenta(cuenta4);
         clientes.put(cliente4.getDocumento(), cliente4);
         
-        // Cliente 5: Pedro González
+        // Cliente 5: Pedro Gonzalez
         Cliente cliente5 = new Cliente(
             "32165498",
-            "Pedro González Vargas",
+            "Pedro Gonzalez Vargas",
             "pedro555",
             "945678912",
             "pedro.gonzalez@email.com"
@@ -83,8 +82,6 @@ public class ClienteRepository {
         cliente5.setCuenta(cuenta5);
         clientes.put(cliente5.getDocumento(), cliente5);
         
-        System.out.println("=== CLIENTES DE PRUEBA INICIALIZADOS ===");
-        System.out.println("Total de clientes: " + clientes.size());
         System.out.println("\nCredenciales para pruebas:");
         for (Cliente c : clientes.values()) {
             System.out.println("- Documento: " + c.getDocumento() + 
