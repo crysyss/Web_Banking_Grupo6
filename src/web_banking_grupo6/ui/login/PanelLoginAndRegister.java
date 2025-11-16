@@ -61,10 +61,10 @@ public class PanelLoginAndRegister extends javax.swing.JLayeredPane {
         label.setForeground(new Color(7, 164, 121));
         login.add(label);
         
-        // Campo de documento (DNI)
+
         txtDocumentoLogin = new MyTextField();
         txtDocumentoLogin.setPrefixIcon(new ImageIcon(getClass().getResource("/resources/icons/user.png")));
-        txtDocumentoLogin.setHint("Documento (DNI)");
+        txtDocumentoLogin.setHint("Documento");
         login.add(txtDocumentoLogin, "w 60%");
         
         // Campo de contraseña
