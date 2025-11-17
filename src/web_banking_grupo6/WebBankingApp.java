@@ -1,6 +1,6 @@
 package web_banking_grupo6;
 
-import web_banking_grupo6.ui.login.LoginWindow;
+import web_banking_grupo6.vista.login.LoginWindow;
 
 /**
  * Clase principal del sistema Web Banking.
@@ -20,9 +20,6 @@ public class WebBankingApp {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        
-        // Inicializar repositorio de clientes (esto mostrará las credenciales en consola)
-        ClienteRepository repo = new ClienteRepository();
         
         // Lanzar ventana de login
         java.awt.EventQueue.invokeLater(new Runnable() {
