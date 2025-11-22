@@ -48,7 +48,7 @@ public class PanelLoginAndRegister extends javax.swing.JLayeredPane {
         
         MyTextField txtDocumento = new MyTextField();
         txtDocumento.setPrefixIcon(new ImageIcon(getClass().getResource("/resources/icons/user.png")));
-        txtDocumento.setHint("Documento (DNI)");
+        txtDocumento.setHint("Documento/C.I");
         register.add(txtDocumento, "w 60%");
         
         MyTextField txtEmail = new MyTextField();

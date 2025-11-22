@@ -19,7 +19,7 @@ public class GestorLogin {
     
     /**
      * Intenta autenticar un cliente con sus credenciales.
-     * @param documento DNI/documento del cliente
+     * @param documento documento del cliente
      * @param clave Contraseña del cliente
      * @return ResultadoLogin con el estado de la autenticación
      */
@@ -86,11 +86,6 @@ public class GestorLogin {
     
     /**
      * Registra un nuevo cliente en el sistema con todas las validaciones necesarias.
-     * @param nombreCompleto Nombre completo del cliente
-     * @param documento DNI/documento del cliente
-     * @param email Correo electrónico del cliente
-     * @param clave Contraseña del cliente
-     * @return ResultadoLogin con el estado del registro
      */
     public ResultadoLogin registrarCliente(String nombreCompleto, String documento, String email, String clave) {
         // Validar que los campos no estén vacíos
